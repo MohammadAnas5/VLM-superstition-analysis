@@ -2,7 +2,7 @@
 
 ---
 
-# 🌠 Superstition Detection in VLM using CLIP
+# 🌠 Superstition Detection in VLM using RationalCLIP
 
 This project explores superstition-based biases in vision-language models (VLMs), specifically OpenAI's CLIP. We evaluate how CLIP models like `ViT-B/32` and `ViT-L/14` respond to prompts that associate images with superstitious beliefs (e.g., "Image of a black cat which is a sign of bad luck").
 
@@ -35,7 +35,7 @@ Each subfolder contains images related to a specific superstition category.
 
 * `ViT-B/32` — OpenAI's CLIP base model
 * `ViT-L/14` — Larger CLIP model
-* `Fine-Tuned CLIP-B/32` — Trained using contrastive loss with superstition prompts
+* `RationalCLIP` — Trained using contrastive loss with superstition prompts
 
 ---
 
@@ -54,7 +54,7 @@ Each subfolder contains images related to a specific superstition category.
 
 * `finetune_clip.py`: Fine-tunes `ViT-B/32` on the created dataset using contrastive loss and K-Fold CV.
 
-### 4. **Evaluation on Fine-Tuned Model**
+### 4. **Evaluation on RationalCLIP**
 
 * `run_finetuned_clip.py`: Runs inference using the fine-tuned model on the dataset and saves ranked outputs.
 
@@ -94,7 +94,7 @@ VLM-superstition-analysis/
 │   ├── run_vit_b32_zeroshot.py     # ViT-B/32 zero-shot eval
 │   ├── run_vit_l14_zeroshot.py     # ViT-L/14 zero-shot eval
 │   ├── create_finetune_dataset.py  # Create CSV for fine-tuning
-│   ├── finetune_clip.py            # Fine-tune CLIP model
+│   ├── RationalCLIP.py            # Fine-tune CLIP model
 │   ├── run_finetuned_clip.py       # Evaluate fine-tuned model
 │   └── visualize_results.py        # Final value counts and visualization
 │
@@ -109,7 +109,7 @@ VLM-superstition-analysis/
 
 ## 🔗 Model and Dataset Links
 
-* 🔍 **Fine-tuned Model (ViT-B/32)**:
+* 🔍 **RationalCLIP - Fine-tuned Model (ViT-B/32)**:
   [HuggingFace - Finetuned CLIP](https://huggingface.co/Mohammad121/Finetuned_CLIP-32_no_superstition/blob/main/fine_tuned_model.pt)
 
 * 📁 **Dataset**:
