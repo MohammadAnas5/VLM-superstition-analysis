@@ -2,7 +2,7 @@
 
 ---
 
-# 🌠 Superstition Detection in VLM using RationalCLIP
+# 🌠 RationalCLIP: Identifying and Mitigating Superstitious Biases in Vision-Language Models
 
 This project explores superstition-based biases in vision-language models (VLMs), specifically OpenAI's CLIP. We evaluate how CLIP models like `ViT-B/32` and `ViT-L/14` respond to prompts that associate images with superstitious beliefs (e.g., "Image of a black cat which is a sign of bad luck").
 
